@@ -2,13 +2,13 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { css } from '@emotion/core';
 
-import FullLogo from '../../static/img/full-logo.svg';
+import FullLogo from '../../static/svg/full-logo.svg';
 
 const Header: React.FC<{}> = () => {
   return (
     <div css={styles}>
       <header>
-        <img src={FullLogo} alt="ㅊ.JAEWON 로고"/>
+        <FullLogo />
         <ul>
           <li><Link to="/">홈</Link></li>
           <li><Link to="/">프로젝트</Link></li>
@@ -30,6 +30,7 @@ const styles = css`
     padding: 0 1rem;
     width: 1440px;
     display: flex;
+    align-items: center;
   }
 
   ul {
