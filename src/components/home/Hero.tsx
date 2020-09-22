@@ -6,19 +6,18 @@ import CjaewonLogo from '../../static/svg/cjaewon-logo.svg';
 
 const Hero: React.FC<{}> = () => {
   return (
-    <div css={styles}>
+    <section css={styles}>
       <div className="hero__center">
         <CjaewonLogo />
         <h2>The FullStack Dev.</h2>
       </div>
-    </div>
+    </section>
   );
 };
 
 const styles = css`
-  position: absolute;
   width: 100vw;
-  height: 100vh;
+  height: calc(100vh - 64px);
   top: 0;
   left: 0;
   display: flex;
@@ -36,9 +35,6 @@ const styles = css`
       margin-top: 0.1rem;
       margin-bottom: 5rem;
     }
-  }
-
-  .hero__svg {
   }
 `;
 

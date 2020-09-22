@@ -9,6 +9,13 @@ const styles = css`
     font-family: 'Noto Sans KR', sans-serif;
     background-color: #111;
     color: white;
+
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none;
+  
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 `;
 
