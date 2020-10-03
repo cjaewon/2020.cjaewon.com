@@ -52,15 +52,17 @@ const Projects: React.FC<{}> = () => {
               </div>
             );
           })}
+          <div><a href="https://github.com/cjaewon">more...</a></div>
           {/* <div><a href="/projects/mealbot">급식봇</a></div>
           <div><a href="/projects/gomokuio">gomokuio</a></div>
           <div><a href="/projects/letterbot">letterbot</a></div>
           <div><a href="/projects/cjaewon.com">cjaewon.com</a></div>
           <div><a href="/projects/letterbot-webhookletter">letterbot-webhookletter</a></div>
-          <div><a href="https://github.com/cjaewon">more...</a></div> */}
+           */}
         </div>
        {  ctx.data 
             && 
+          // TOD: add link
           <div className="projects__info">
             <div className="projects__info--use">사용된 기술 : [ {ctx.data.frontmatter.uses.map(use => `${use}  `)}]</div>
             <div dangerouslySetInnerHTML={{
@@ -165,6 +167,16 @@ const styles = css`
 
   .projects__info--use {
     color: #2ed573;
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: #00CED1;
+      font-style: italic;
+      cursor: pointer;
+    }
   }
 `;
 
