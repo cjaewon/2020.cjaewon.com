@@ -16,6 +16,7 @@ const Projects: React.FC<{}> = () => {
       frontmatter :{
         title: string;
         uses: string[];
+        buttons: [string, string][];
       }
     } | null;
   }>({
@@ -33,7 +34,7 @@ const Projects: React.FC<{}> = () => {
   };
 
   return (
-    <section css={styles}>
+    <section id="projects" css={styles}>
     <div className="projects__highlight">
       <pre>
       <code className="language-bash" data-lang="bash">
@@ -64,6 +65,7 @@ const Projects: React.FC<{}> = () => {
             && 
           // TOD: add link
           <div className="projects__info">
+            <div className="projects__info--buttons">{ctx.data.frontmatter.buttons[0][0]}</div>
             <div className="projects__info--use">사용된 기술 : [ {ctx.data.frontmatter.uses.map(use => `${use}  `)}]</div>
             <div dangerouslySetInnerHTML={{
                 __html: ctx.data.html
@@ -93,6 +95,7 @@ const query = graphql`
         frontmatter {
           title
           uses
+          buttons
         }
       }
     }
@@ -112,6 +115,7 @@ interface Query {
         frontmatter :{
           title: string;
           uses: string[];
+          buttons: [string, string][];
         }
       }
     }[]
@@ -167,6 +171,13 @@ const styles = css`
 
   .projects__info--use {
     color: #2ed573;
+  }
+
+
+  .projects__info--buttons {
+    color: #eccc68;
+    cursor: pointer;
+    text-decoration: underline;
   }
 
   a {

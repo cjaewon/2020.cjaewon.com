@@ -1,6 +1,7 @@
 ---
 title: mealbot
 uses: [NodeJS, TypeScript, AWS Lambda]
+buttons: [["사용해보기", "https://pf.kakao.com/_xjXYVT"]]
 date: Sat Oct 03 2020 14:18:28 GMT+0900
 
 ---

@@ -11,7 +11,7 @@ const Header: React.FC<{}> = () => {
         <FullLogo />
         <ul>
           <li><Link to="/">홈</Link></li>
-          <li><Link to="/">프로젝트</Link></li>
+          <li><Link to="#projects">프로젝트</Link></li>
           <li><Link to="/">타임라인</Link></li>
           <li><Link to="/">블로그</Link></li>
         </ul>

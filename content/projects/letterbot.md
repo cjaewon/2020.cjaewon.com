@@ -1,6 +1,7 @@
 ---
 title: letterbot
 uses: [Github Actions, NodeJS, TypeScript]
+buttons: [["깃허브 보러가기", "https://github.com/cjaewon/letterbot"]]
 date: Sat Oct 03 2020 15:12:08 GMT+0900
 
 ---

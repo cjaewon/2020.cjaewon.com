@@ -1,6 +1,7 @@
 ---
 title: gomokuio
 uses: [NodeJS, TypeScript, Parcel]
+buttons: [["플레이하기", "https://gomokuio.herokuapp.com/"]]
 date: Sat Oct 03 2020 14:18:45 GMT+0900
 
 ---
